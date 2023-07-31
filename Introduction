@@ -1,0 +1,25 @@
+import colorama
+from colorama import Fore, Style
+
+def display_environmental_page():
+    # Set the terminal (or console) to support colored text
+    colorama.init(autoreset=True)
+
+    # Environmental-friendly background ASCII art
+    environmental_background = f"""{Fore.GREEN}
+      /\\__
+     (    @\___
+      /         O
+     /   (_____/
+    /_____/   U
+{Style.RESET_ALL}"""
+
+    # Heading text
+    heading = f"{Fore.CYAN}Welcome to EviroSense - Your Eco-Friendly Waste Guide!{Style.RESET_ALL}"
+
+    # Display the environmental background and heading
+    print(environmental_background)
+    print(heading)
+
+if __name__ == "__main__":
+    display_environmental_page()
